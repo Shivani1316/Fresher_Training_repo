@@ -20,12 +20,12 @@ pipeline {
             }
         }
 
-        post{
+    }
+
+
+ post{
             always{
                 emailext body: 'Test Data value', compressLog: true, subject: 'Summary of CICD Pipeline run', to: 'shivani.rathi16@gmail.com'
             }
-            
-            
-        }
-    }
+ }
 }
